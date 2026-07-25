@@ -53,12 +53,12 @@ function getDevicesList() {
 
   // Add remaining persisted devices (which are intercepting and potentially offline)
   for (const [id, isIntercepting] of Object.entries(persistedStates)) {
-    devicesMap.set(id, { id, isIntercepting, online: false });
+    devicesMap.set(id, { id, isIntercepting, online: false, connectedAt: null });
   }
   
   // Overwrite with actually connected devices (online = true)
   for (const [id, info] of deviceClients.entries()) {
-    devicesMap.set(id, { id, isIntercepting: info.isIntercepting, online: true });
+    devicesMap.set(id, { id, isIntercepting: info.isIntercepting, online: true, connectedAt: info.connectedAt || Date.now() });
   }
 
   return Array.from(devicesMap.values());
@@ -85,7 +85,7 @@ wss.on('connection', (ws, req) => {
         }
     }
     
-    deviceClients.set(deviceId, { ws, isIntercepting });
+    deviceClients.set(deviceId, { ws, isIntercepting, connectedAt: Date.now() });
     
     // Instantly sync device with its persistent state
     ws.send(JSON.stringify({ command: isIntercepting ? 'START' : 'STOP' }));

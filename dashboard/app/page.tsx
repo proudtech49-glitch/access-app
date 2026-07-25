@@ -29,15 +29,7 @@ export default function Dashboard() {
 
   // Generate a fixed 10-node grid for the hacker aesthetic
   const allNodes = useMemo(() => {
-    const nodes = [];
-    for (let i = 0; i < 10; i++) {
-      if (connectedDevices[i]) {
-        nodes.push(connectedDevices[i]);
-      } else {
-        nodes.push({ id: `NODE_SEC_0${i+1}`, online: false, isIntercepting: false });
-      }
-    }
-    return nodes;
+    return connectedDevices;
   }, [connectedDevices]);
 
   const currentDevice = connectedDevices.find(d => d.id === selectedDevice);
@@ -83,6 +75,11 @@ export default function Dashboard() {
                   <div className={`text-[10px] mt-2 ${node.online ? (node.isIntercepting ? 'text-red-400' : 'text-[#00FF41]') : 'text-red-900'}`}>
                     {node.online ? (node.isIntercepting ? '[ STATUS: INTERCEPTING ]' : '[ STATUS: IDLE ]') : '[ STATUS: OFFLINE ]'}
                   </div>
+                  {node.online && node.connectedAt && (
+                    <div className="text-[9px] text-[#00FF41]/50 mt-1 font-mono">
+                      UPTIME: {Math.floor((Date.now() - node.connectedAt) / 60000)}m
+                    </div>
+                  )}
                 </div>
                 {node.online && (
                   <div className="absolute top-2 right-2 flex gap-1">

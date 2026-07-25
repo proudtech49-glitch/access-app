@@ -12,6 +12,7 @@ export interface ConnectedDevice {
   id: string;
   isIntercepting: boolean;
   online: boolean;
+  connectedAt?: number | null;
 }
 
 export type ConnectionStatus = 'connecting' | 'connected' | 'disconnected' | 'error';

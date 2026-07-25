@@ -80,8 +80,15 @@ export function DeviceList() {
                       </button>
                     </div>
                   )}
-                  <div className={`text-[10px] ${device.isIntercepting ? 'text-red-500' : 'text-[#00FF41]/70'}`}>
-                    {device.isIntercepting ? 'Status: INTERCEPTING' : 'Status: IDLE'}
+                  <div className="flex justify-between items-center mt-1">
+                    <div className={`text-[9px] ${device.isIntercepting ? 'text-red-500' : 'text-[#00FF41]/70'}`}>
+                      {device.isIntercepting ? 'Status: INTERCEPTING' : 'Status: IDLE'}
+                    </div>
+                    {device.online && device.connectedAt && (
+                      <div className="text-[8px] text-[#00FF41]/40 font-mono">
+                        UP: {Math.floor((Date.now() - device.connectedAt) / 60000)}m
+                      </div>
+                    )}
                   </div>
                 </div>
                 <div className={`w-1.5 h-1.5 rounded-full ${device.isIntercepting ? 'bg-red-500 animate-pulse' : 'bg-[#00FF41]'}`} />
