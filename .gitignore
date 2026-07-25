@@ -1,0 +1,11 @@
+node_modules/
+.DS_Store
+.env
+.next/
+android/app/build/
+android/.gradle/
+android/build/
+android/local.properties
+server/node_modules/
+dashboard/node_modules/
+dashboard/.next/

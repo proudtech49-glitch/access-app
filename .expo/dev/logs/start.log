@@ -1,0 +1,174 @@
+{"_e":"root:init","_t":1784917252915,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784917252915,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784917252917,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784917253044,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784917253262,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784917253378,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784917253649,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"root:init","_t":1784961302916,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"devserver:start","_t":1784961302922,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784961303100,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784961303173,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784961303487,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784961328766,"id":"1","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784961328766,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961328769,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961329052,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:done","_t":1784961329387,"id":"1","total":1,"ms":620.986833}
+{"_e":"metro:bundling:started","_t":1784961344185,"id":"2","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784961344185,"id":"2","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784961344189,"id":"2","total":1,"ms":3.549958}
+{"_e":"metro:bundling:started","_t":1784961347746,"id":"3","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784961347746,"id":"3","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784961347748,"id":"3","total":1,"ms":2.712208}
+{"_e":"metro:server_log","_t":1784961423030,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1784961424242,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1784961424800,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:bundling:started","_t":1784961448563,"id":"4","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784961448563,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961448564,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961448664,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961448764,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961448865,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961448965,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449065,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449166,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449266,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449369,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449469,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449569,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449671,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449771,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449871,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961449972,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961450072,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961450174,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784961450226,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784961450336,"id":"4","total":1,"ms":1772.617583}
+{"_e":"metro:server_log","_t":1784961999968,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"root:init","_t":1784962116135,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"devserver:start","_t":1784962116146,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784962116354,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784962116419,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784962116746,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784962125197,"id":"1","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784962125197,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784962125200,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784962125299,"id":"1","progress":0.37807253602895974,"total":605,"current":372}
+{"_e":"metro:bundling:progress","_t":1784962125401,"id":"1","progress":0.999,"total":954,"current":954}
+{"_e":"metro:bundling:done","_t":1784962125424,"id":"1","total":954,"ms":227.272417}
+{"_e":"metro:client_log","_t":1784962132326,"level":"warn","data":["SafeAreaView has been deprecated and will be removed in a future release. Please use 'react-native-safe-area-context' instead. See https://github.com/AppAndFlow/react-native-safe-area-context"]}
+{"_e":"metro:server_log","_t":1784962136886,"level":"info","data":["Launching DevTools..."]}
+{"_e":"metro:server_log","_t":1784962136887,"level":"warn","data":["No compatible apps connected. React Native DevTools can only be used with the Hermes engine."]}
+{"_e":"metro:server_log","_t":1784962139113,"level":"info","data":["Launching DevTools..."]}
+{"_e":"metro:server_log","_t":1784962139114,"level":"warn","data":["No compatible apps connected. React Native DevTools can only be used with the Hermes engine."]}
+{"_e":"metro:bundling:started","_t":1784962676670,"id":"4","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784962676670,"id":"4","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784962676710,"id":"4","total":1,"ms":40.104334}
+{"_e":"metro:bundling:started","_t":1784962695870,"id":"5","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784962695871,"id":"5","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:done","_t":1784962695902,"id":"5","total":1,"ms":31.579209}
+{"_e":"metro:server_log","_t":1784963376544,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1784963520615,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:bundling:failed","_t":1784963552603,"id":null,"message":"Unable to resolve \"@expo/vector-icons\" from \"src/App.tsx\"\n  15 |   withSequence, Easing, withSpring, interpolateColor, FadeInDown, FadeIn, ZoomIn\n  16 | } from 'react-native-reanimated';\n> 17 | import { Feather } from '@expo/vector-icons';\n     |                          ^\n  18 | import { \n  19 |   useFonts,\n  20 |   PlusJakartaSans_400Regular,","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/App.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@expo/vector-icons\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"@expo/vector-icons","originModulePath":"src/App.tsx"}
+{"_e":"metro:bundling:failed","_t":1784963552644,"id":null,"message":"Unable to resolve \"@expo/vector-icons\" from \"src/App.tsx\"\n  15 |   withSequence, Easing, withSpring, interpolateColor, FadeInDown, FadeIn, ZoomIn\n  16 | } from 'react-native-reanimated';\n> 17 | import { Feather } from '@expo/vector-icons';\n     |                          ^\n  18 | import { \n  19 |   useFonts,\n  20 |   PlusJakartaSans_400Regular,","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/App.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@expo/vector-icons\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"@expo/vector-icons","originModulePath":"src/App.tsx"}
+{"_e":"metro:bundling:failed","_t":1784963607951,"id":null,"message":"Unable to resolve \"@expo/vector-icons\" from \"src/App.tsx\"\n  15 |   withSequence, Easing, withSpring, interpolateColor, FadeInDown, FadeIn, ZoomIn\n  16 | } from 'react-native-reanimated';\n> 17 | import { Feather } from '@expo/vector-icons';\n     |                          ^\n  18 | import { \n  19 |   useFonts,\n  20 |   PlusJakartaSans_400Regular,","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/App.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@expo/vector-icons\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"@expo/vector-icons","originModulePath":"src/App.tsx"}
+{"_e":"metro:bundling:failed","_t":1784963608319,"id":null,"message":"Unable to resolve \"@expo/vector-icons\" from \"src/App.tsx\"\n  15 |   withSequence, Easing, withSpring, interpolateColor, FadeInDown, FadeIn, ZoomIn\n  16 | } from 'react-native-reanimated';\n> 17 | import { Feather } from '@expo/vector-icons';\n     |                          ^\n  18 | import { \n  19 |   useFonts,\n  20 |   PlusJakartaSans_400Regular,","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/App.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@expo/vector-icons\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"@expo/vector-icons","originModulePath":"src/App.tsx"}
+{"_e":"root:init","_t":1784963966632,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"devserver:start","_t":1784963966644,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784963966834,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784963966914,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784963967340,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784963980476,"id":"1","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784963980476,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784963980480,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784963980789,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1784963980890,"id":"1","progress":0.04000000000000001,"total":3,"current":2}
+{"_e":"metro:bundling:progress","_t":1784963981036,"id":"1","progress":0.29752066115702475,"total":11,"current":6}
+{"_e":"metro:bundling:progress","_t":1784963981137,"id":"1","progress":0.29752066115702475,"total":125,"current":13}
+{"_e":"metro:bundling:progress","_t":1784963981237,"id":"1","progress":0.29752066115702475,"total":150,"current":27}
+{"_e":"metro:bundling:progress","_t":1784963981337,"id":"1","progress":0.29752066115702475,"total":227,"current":76}
+{"_e":"metro:bundling:progress","_t":1784963981437,"id":"1","progress":0.29752066115702475,"total":296,"current":153}
+{"_e":"metro:bundling:progress","_t":1784963981537,"id":"1","progress":0.35092745746691867,"total":368,"current":218}
+{"_e":"metro:bundling:progress","_t":1784963981637,"id":"1","progress":0.4444444444444444,"total":420,"current":280}
+{"_e":"metro:bundling:progress","_t":1784963981738,"id":"1","progress":0.5526748614958449,"total":456,"current":339}
+{"_e":"metro:bundling:progress","_t":1784963981838,"id":"1","progress":0.7087772853956462,"total":487,"current":410}
+{"_e":"metro:bundling:progress","_t":1784963981938,"id":"1","progress":0.7937190082644627,"total":550,"current":490}
+{"_e":"metro:bundling:progress","_t":1784963982038,"id":"1","progress":0.8070027777777777,"total":600,"current":539}
+{"_e":"metro:bundling:progress","_t":1784963982138,"id":"1","progress":0.8307417982635045,"total":655,"current":597}
+{"_e":"metro:bundling:progress","_t":1784963982238,"id":"1","progress":0.9395390889504464,"total":684,"current":663}
+{"_e":"metro:bundling:progress","_t":1784963982339,"id":"1","progress":0.9942196652851109,"total":691,"current":689}
+{"_e":"metro:bundling:progress","_t":1784963982500,"id":"1","progress":0.9971077383183833,"total":691,"current":690}
+{"_e":"metro:bundling:progress","_t":1784963982601,"id":"1","progress":0.9971202318763547,"total":694,"current":693}
+{"_e":"metro:bundling:progress","_t":1784963982675,"id":"1","progress":0.999,"total":694,"current":694}
+{"_e":"metro:bundling:failed","_t":1784963982692,"id":"1","message":"Unable to resolve \"@expo/vector-icons\" from \"src/App.tsx\"\n  15 |   withSequence, Easing, withSpring, interpolateColor, FadeInDown, FadeIn, ZoomIn\n  16 | } from 'react-native-reanimated';\n> 17 | import { Feather } from '@expo/vector-icons';\n     |                          ^\n  18 | import { \n  19 |   useFonts,\n  20 |   PlusJakartaSans_400Regular,","importStack":"\u001b[1mImport stack:\u001b[22m\n\n\u001b[90m \u001b[39msrc/App.tsx\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"@expo/vector-icons\"\u001b[39m\n\n\u001b[90m \u001b[39mindex.js\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./src/App\"\u001b[39m\n\n\u001b[90m \u001b[39m\n\u001b[90m |\u001b[39m \u001b[36mimport\u001b[39m \u001b[32m\"./index\"\u001b[39m\n","filename":null,"targetModuleName":"@expo/vector-icons","originModulePath":"src/App.tsx"}
+{"_e":"root:init","_t":1784964051206,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"env:mode","_t":1784964051206,"nodeEnv":"development","babelEnv":"development","mode":"development"}
+{"_e":"env:load","_t":1784964051207,"mode":"development","files":[],"env":{}}
+{"_e":"devserver:start","_t":1784964051327,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784964051496,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784964051587,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784964051914,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784964064192,"id":"1","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784964064193,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784964064195,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784964064419,"id":"1","progress":0.010000000000000002,"total":1,"current":1}
+{"_e":"metro:bundling:progress","_t":1784964064523,"id":"1","progress":0.08163265306122448,"total":21,"current":6}
+{"_e":"metro:bundling:progress","_t":1784964064624,"id":"1","progress":0.08163265306122448,"total":144,"current":17}
+{"_e":"metro:bundling:progress","_t":1784964064724,"id":"1","progress":0.08163265306122448,"total":154,"current":28}
+{"_e":"metro:bundling:progress","_t":1784964064824,"id":"1","progress":0.08163265306122448,"total":212,"current":46}
+{"_e":"metro:bundling:progress","_t":1784964064925,"id":"1","progress":0.11881600091827367,"total":264,"current":91}
+{"_e":"metro:bundling:progress","_t":1784964065025,"id":"1","progress":0.2421264802217183,"total":315,"current":155}
+{"_e":"metro:bundling:progress","_t":1784964065125,"id":"1","progress":0.2421264802217183,"total":475,"current":226}
+{"_e":"metro:bundling:progress","_t":1784964065225,"id":"1","progress":0.27237065277066386,"total":571,"current":298}
+{"_e":"metro:bundling:progress","_t":1784964065325,"id":"1","progress":0.33261576173968926,"total":593,"current":342}
+{"_e":"metro:bundling:progress","_t":1784964065425,"id":"1","progress":0.35470108424582375,"total":722,"current":430}
+{"_e":"metro:bundling:progress","_t":1784964065526,"id":"1","progress":0.35470108424582375,"total":771,"current":459}
+{"_e":"metro:bundling:progress","_t":1784964065626,"id":"1","progress":0.44276253698602186,"total":792,"current":527}
+{"_e":"metro:bundling:progress","_t":1784964065726,"id":"1","progress":0.4939184170281826,"total":895,"current":629}
+{"_e":"metro:bundling:progress","_t":1784964065832,"id":"1","progress":0.5504182458025286,"total":957,"current":710}
+{"_e":"metro:bundling:progress","_t":1784964065933,"id":"1","progress":0.5504182458025286,"total":1015,"current":753}
+{"_e":"metro:bundling:progress","_t":1784964066033,"id":"1","progress":0.5847750865051903,"total":1054,"current":806}
+{"_e":"metro:bundling:progress","_t":1784964066133,"id":"1","progress":0.626736111111111,"total":1104,"current":874}
+{"_e":"metro:bundling:progress","_t":1784964066233,"id":"1","progress":0.7118203988402652,"total":1126,"current":950}
+{"_e":"metro:bundling:progress","_t":1784964066336,"id":"1","progress":0.7178870243828358,"total":1159,"current":982}
+{"_e":"metro:bundling:progress","_t":1784964066445,"id":"1","progress":0.7205414657233848,"total":1171,"current":994}
+{"_e":"metro:bundling:progress","_t":1784964066546,"id":"1","progress":0.7472740235869729,"total":1173,"current":1014}
+{"_e":"metro:bundling:progress","_t":1784964066646,"id":"1","progress":0.7779387615763029,"total":1195,"current":1054}
+{"_e":"metro:bundling:progress","_t":1784964066752,"id":"1","progress":0.7930097501198785,"total":1233,"current":1098}
+{"_e":"metro:bundling:progress","_t":1784964066852,"id":"1","progress":0.842231343588278,"total":1252,"current":1149}
+{"_e":"metro:bundling:progress","_t":1784964066952,"id":"1","progress":0.9194563294716106,"total":1289,"current":1236}
+{"_e":"metro:bundling:progress","_t":1784964067052,"id":"1","progress":0.9499186095358118,"total":1380,"current":1345}
+{"_e":"metro:bundling:progress","_t":1784964067152,"id":"1","progress":0.999,"total":1415,"current":1415}
+{"_e":"metro:bundling:done","_t":1784964067230,"id":"1","total":1415,"ms":3037.894084}
+{"_e":"metro:server_log","_t":1784964304132,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1784964775917,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:client_log","_t":1784964908855,"level":"error","data":["[Error: Cannot find native module 'ExponentPedometer']"]}
+{"_e":"root:init","_t":1784965569561,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"devserver:start","_t":1784965569577,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784965569804,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784965569959,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784965570563,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784965578121,"id":"1","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784965578121,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784965578128,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784965578228,"id":"1","progress":0.2257934711533625,"total":564,"current":268}
+{"_e":"metro:bundling:progress","_t":1784965578328,"id":"1","progress":0.6701837963585059,"total":976,"current":799}
+{"_e":"metro:bundling:progress","_t":1784965578428,"id":"1","progress":0.8960485131554796,"total":1367,"current":1294}
+{"_e":"metro:bundling:progress","_t":1784965578528,"id":"1","progress":0.9986057861576497,"total":1434,"current":1433}
+{"_e":"metro:bundling:progress","_t":1784965578559,"id":"1","progress":0.999,"total":1434,"current":1434}
+{"_e":"metro:bundling:progress","_t":1784965578659,"id":"1","progress":0.999,"total":1439,"current":1437}
+{"_e":"metro:bundling:progress","_t":1784965578757,"id":"1","progress":0.999,"total":1439,"current":1438}
+{"_e":"metro:bundling:done","_t":1784965578823,"id":"1","total":1439,"ms":701.303166}
+{"_e":"root:init","_t":1784966222597,"format":"v0-jsonl","version":"57.0.10"}
+{"_e":"devserver:start","_t":1784966222609,"mode":"development","web":true,"baseUrl":"","asyncRoutes":false,"routerRoot":"../../../app","serverComponents":false,"serverActions":false,"serverRendering":false,"apiRoutes":false,"exporting":false}
+{"_e":"metro:config","_t":1784966222803,"serverRoot":"../../..","projectRoot":"../../..","exporting":false,"flags":{"autolinkingModuleResolution":false,"serverActions":false,"serverComponents":false,"reactCompiler":false,"optimizeGraph":false,"treeshaking":false,"logbox":false}}
+{"_e":"expo:dev-tools-plugin:load","_t":1784966222881,"plugins":[]}
+{"_e":"metro:instantiate","_t":1784966223281,"atlas":false,"workers":7,"host":"::","port":8081}
+{"_e":"metro:bundling:started","_t":1784966236359,"id":"1","platform":"android","environment":null,"entry":"index.js"}
+{"_e":"metro:bundling:progress","_t":1784966236360,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784966236363,"id":"1","progress":0,"total":1,"current":0}
+{"_e":"metro:bundling:progress","_t":1784966236463,"id":"1","progress":0.22763650565364013,"total":568,"current":271}
+{"_e":"metro:bundling:progress","_t":1784966236563,"id":"1","progress":0.745370487909748,"total":1105,"current":954}
+{"_e":"metro:bundling:done","_t":1784966236682,"id":"1","total":1105,"ms":323.057834}
+{"_e":"metro:server_log","_t":1784966482190,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
