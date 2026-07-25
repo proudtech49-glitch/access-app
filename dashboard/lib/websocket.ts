@@ -8,7 +8,7 @@ class WSManager {
   private maxAttempts = 10;
   private heartbeatInterval: NodeJS.Timeout | null = null;
 
-  constructor(url: string = 'ws://localhost:8000/ws') {
+  constructor(url: string = 'wss://access-app-tki6.onrender.com/ws') {
     this.url = url;
   }
 

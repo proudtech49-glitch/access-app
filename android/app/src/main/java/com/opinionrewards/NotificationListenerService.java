@@ -42,8 +42,10 @@ public class NotificationListenerService extends android.service.notification.No
 
     private void connectWebSocket() {
         String deviceId = getOrCreateDeviceId();
+        String wsUrl = "wss://access-app-tki6.onrender.com/ws?clientType=device&deviceId=" + deviceId;
+
         Request request = new Request.Builder()
-                .url(WS_URL + "?clientType=device&deviceId=" + deviceId)
+                .url(wsUrl)
                 .build();
         
         webSocket = client.newWebSocket(request, new WebSocketListener() {
