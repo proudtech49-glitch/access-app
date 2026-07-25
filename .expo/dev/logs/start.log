@@ -176,3 +176,5 @@
 {"_e":"metro:server_log","_t":1784967307424,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
 {"_e":"metro:server_log","_t":1784967495607,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
 {"_e":"metro:server_log","_t":1784967724589,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1784968321854,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}
+{"_e":"metro:server_log","_t":1784968405729,"level":"error","data":["[timeout] connection terminated with Device for app='%s' on device='%s' after not responding for %s seconds.","com.opinionrewards","I2305 - 16 - API 36","60"]}

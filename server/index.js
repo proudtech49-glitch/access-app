@@ -39,21 +39,33 @@ function broadcastToDashboards(data) {
   });
 }
 
-function broadcastDeviceState() {
+function getDevicesList() {
   const devicesMap = new Map();
   
-  // First, add all known devices from persistence (offline by default)
+  // Clean up persisted states for devices that are offline and not intercepting
+  for (const id of Object.keys(persistedStates)) {
+    const isIntercepting = persistedStates[id];
+    if (!isIntercepting && !deviceClients.has(id)) {
+      delete persistedStates[id];
+    }
+  }
+  saveStates();
+
+  // Add remaining persisted devices (which are intercepting and potentially offline)
   for (const [id, isIntercepting] of Object.entries(persistedStates)) {
     devicesMap.set(id, { id, isIntercepting, online: false });
   }
   
-  // Then overwrite with actually connected devices (online = true)
+  // Overwrite with actually connected devices (online = true)
   for (const [id, info] of deviceClients.entries()) {
     devicesMap.set(id, { id, isIntercepting: info.isIntercepting, online: true });
   }
 
-  const devices = Array.from(devicesMap.values());
-  broadcastToDashboards({ type: 'device_state_update', devices });
+  return Array.from(devicesMap.values());
+}
+
+function broadcastDeviceState() {
+  broadcastToDashboards({ type: 'device_state_update', devices: getDevicesList() });
 }
 
 wss.on('connection', (ws, req) => {
@@ -64,6 +76,15 @@ wss.on('connection', (ws, req) => {
   if (clientType === 'device' && deviceId) {
     console.log(`Device connected: ${deviceId}`);
     const isIntercepting = !!persistedStates[deviceId];
+    
+    // Close old connection if replacing an active one
+    if (deviceClients.has(deviceId)) {
+        const oldClient = deviceClients.get(deviceId);
+        if (oldClient.ws !== ws && oldClient.ws.readyState === 1) {
+            oldClient.ws.close();
+        }
+    }
+    
     deviceClients.set(deviceId, { ws, isIntercepting });
     
     // Instantly sync device with its persistent state
@@ -73,8 +94,12 @@ wss.on('connection', (ws, req) => {
 
     ws.on('close', () => {
       console.log(`Device disconnected: ${deviceId}`);
-      deviceClients.delete(deviceId);
-      broadcastDeviceState();
+      // Only delete if the current connection in the map is THIS specific ws
+      const current = deviceClients.get(deviceId);
+      if (current && current.ws === ws) {
+        deviceClients.delete(deviceId);
+        broadcastDeviceState();
+      }
     });
 
     ws.on('message', (msg) => {
@@ -93,7 +118,7 @@ wss.on('connection', (ws, req) => {
     // Send active devices
     ws.send(JSON.stringify({ 
       type: 'device_state_update', 
-      devices: Array.from(deviceClients.entries()).map(([id, info]) => ({ id, isIntercepting: info.isIntercepting })) 
+      devices: getDevicesList() 
     }));
 
     ws.on('close', () => {

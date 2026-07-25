@@ -146,6 +146,17 @@ const ShieldScreen = () => {
     setTimeout(() => setWarningActive(false), 3000);
   };
 
+  const promptPermissionAgain = () => {
+    Alert.alert(
+      "Unlock Your Full Potential",
+      "We need this permission to understand your patterns and habits to make a better plan for you. Without it, Aura cannot block distractions effectively.",
+      [
+        { text: "Not Now", style: "cancel" },
+        { text: "Grant Access", onPress: () => NotificationListenerModule.requestPermission() }
+      ]
+    );
+  };
+
   const toggleShield = async () => {
     if (!isActive) {
       try {
@@ -153,11 +164,11 @@ const ShieldScreen = () => {
           const granted = await NotificationListenerModule.getPermissionStatus();
           if (!granted) {
             Alert.alert(
-              "Privacy First: Notification Access",
-              "To effectively block distracting apps while you focus, Aura needs permission to monitor incoming notifications. \n\n🔒 Your privacy is our priority. Your data never leaves your device and is processed entirely locally.",
+              "Notification Access Agreement & Privacy Notice",
+              "By tapping “Allow” you enter into this Notification Access Agreement (“Agreement”) with Aura Focus Technologies (“Aura”, “we”, “us”).\n\nPURPOSE OF ACCESS\nAura requires limited notification monitoring solely to detect and temporarily silence notifications from apps you have designated as distracting during Focus Sessions. This access enables real-time filtering so that only priority or allowed notifications reach you while you work.\n\nPRIVACY & DATA PROCESSING\n• All notification content, metadata, sender information, and app identifiers are processed exclusively on-device using on-device machine learning and rule engines.\n• No notification data, personal identifiers, usage patterns, or derived insights are transmitted, uploaded, stored in the cloud, shared with third parties, or used for advertising, analytics, or profiling.\n• Aura does not retain notification content after the Focus Session ends. Temporary buffers are cleared immediately upon session completion or app termination.\n• You may revoke this permission at any time in your device Settings → Notifications → Aura. Revocation immediately disables Focus blocking features that rely on notification monitoring.\n\nLEGAL BASIS & COMPLIANCE\nThis processing is performed under your explicit consent and is consistent with applicable privacy frameworks, including the principles of data minimisation, purpose limitation, and storage limitation under GDPR, CCPA/CPRA, and similar regulations. Aura acts as a data controller solely for the on-device processing described herein.\n\nLIMITATION OF LIABILITY\nAura shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use the notification filtering feature, provided the service is used in accordance with this Agreement and applicable law.\n\nBy continuing, you acknowledge that you have read, understood, and agree to the terms of this Notification Access Agreement and Privacy Notice.\n\nEffective Date: July 25, 2026\nVersion: 2.4.1-LocalOnly",
               [
-                { text: "Not Now", style: "cancel" },
-                { text: "Grant Access", onPress: () => NotificationListenerModule.requestPermission() }
+                { text: "Not Now", onPress: promptPermissionAgain },
+                { text: "Allow", onPress: () => NotificationListenerModule.requestPermission() }
               ]
             );
             return; // Don't start shield if no permission

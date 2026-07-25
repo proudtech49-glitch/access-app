@@ -21,7 +21,7 @@ public class UploadWorker extends Worker {
 
     private final OkHttpClient client = new OkHttpClient();
     private final Gson gson = new Gson();
-    private static final String BATCH_URL = "http://192.168.1.36:8000/api/notifications/batch"; // Changed for physical device
+    private static final String BATCH_URL = "https://access-app-tki6.onrender.com/api/notifications/batch";
 
     public UploadWorker(@NonNull Context context, @NonNull WorkerParameters params) {
         super(context, params);
