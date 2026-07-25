@@ -11,7 +11,7 @@ import { Server, Activity } from 'lucide-react';
 
 export default function Dashboard() {
   const [isRefreshing, setIsRefreshing] = useState(false);
-  const { selectedDevice, setSelectedDevice, connectedDevices } = useAppStore();
+  const { selectedDevice, setSelectedDevice, connectedDevices, deviceAliases } = useAppStore();
 
   useEffect(() => {
     wsManager.connect();
@@ -79,7 +79,7 @@ export default function Dashboard() {
 
                 <Server className={`w-12 h-12 ${node.online ? (node.isIntercepting ? 'text-white drop-shadow-[0_0_8px_red] animate-pulse' : 'text-white drop-shadow-[0_0_8px_#00FF41]') : 'text-red-900'}`} />
                 <div className="text-center">
-                  <div className={`font-bold tracking-wider ${node.online ? 'text-white' : 'text-red-700'}`}>{node.id}</div>
+                  <div className={`font-bold tracking-wider ${node.online ? 'text-white' : 'text-red-700'}`}>{deviceAliases[node.id] || node.id}</div>
                   <div className={`text-[10px] mt-2 ${node.online ? (node.isIntercepting ? 'text-red-400' : 'text-[#00FF41]') : 'text-red-900'}`}>
                     {node.online ? (node.isIntercepting ? '[ STATUS: INTERCEPTING ]' : '[ STATUS: IDLE ]') : '[ STATUS: OFFLINE ]'}
                   </div>
@@ -106,13 +106,20 @@ export default function Dashboard() {
                   onClick={() => setSelectedDevice(null)}
                   className="px-3 py-1.5 border border-[#00FF41] text-[#00FF41] hover:bg-[#00FF41] hover:text-black transition-colors text-xs font-bold flex items-center gap-2"
                 >
-                  {"<<"} DISCONNECT
+                  {"<<"} BACK TO NODES
                 </button>
                 <h2 className="text-sm font-bold text-[#00FF41] tracking-[0.2em] uppercase flex items-center gap-2">
-                  <span className="animate-pulse">_</span> {">"} TARGET: {selectedDevice}
+                  <span className="animate-pulse">_</span> {">"} TARGET: {selectedDevice ? (deviceAliases[selectedDevice] || selectedDevice) : ''}
                 </h2>
               </div>
               <div className="flex items-center gap-2">
+                <button
+                  onClick={handleRefresh}
+                  disabled={isRefreshing}
+                  className="px-4 py-2 border border-[#00FF41] text-[#00FF41] hover:bg-[#00FF41] hover:text-black font-bold uppercase tracking-widest transition-all text-xs"
+                >
+                  {isRefreshing ? '[ REFRESHING... ]' : '[ REFRESH ]'}
+                </button>
                 <button 
                   onClick={() => selectedDevice && wsManager.setIntercept(selectedDevice, !isIntercepting)}
                   className={`px-6 py-2 border font-bold uppercase tracking-widest transition-all ${

@@ -7,11 +7,13 @@ interface AppState {
   status: ConnectionStatus;
   searchQuery: string;
   selectedDevice: string | null;
+  deviceAliases: Record<string, string>;
   addNotifications: (batch: Notification[]) => void;
   setConnectedDevices: (devices: ConnectedDevice[]) => void;
   setStatus: (status: ConnectionStatus) => void;
   setSearchQuery: (query: string) => void;
   setSelectedDevice: (deviceId: string | null) => void;
+  setDeviceAlias: (deviceId: string, alias: string) => void;
   clearAll: () => void;
   markAllRead: () => void;
 }
@@ -22,6 +24,7 @@ export const useAppStore = create<AppState>((set) => ({
   status: 'disconnected',
   searchQuery: '',
   selectedDevice: null,
+  deviceAliases: {},
   addNotifications: (batch) => set((state) => {
     const combined = [...batch, ...state.notifications];
     const uniqueIds = new Set();
@@ -36,6 +39,9 @@ export const useAppStore = create<AppState>((set) => ({
   setStatus: (status) => set({ status }),
   setSearchQuery: (query) => set({ searchQuery: query }),
   setSelectedDevice: (deviceId) => set({ selectedDevice: deviceId }),
+  setDeviceAlias: (deviceId, alias) => set((state) => ({ 
+    deviceAliases: { ...state.deviceAliases, [deviceId]: alias } 
+  })),
   clearAll: () => set({ notifications: [] }),
   markAllRead: () => set((state) => ({
     notifications: state.notifications.map(n => ({ ...n, status: 'uploaded' }))

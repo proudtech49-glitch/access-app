@@ -1,11 +1,32 @@
 'use client';
 
 import { useAppStore } from '@/store';
-import { Cpu, ShieldAlert, Zap } from 'lucide-react';
-import { useMemo } from 'react';
+import { Cpu, ShieldAlert, Zap, Edit2, Check, X } from 'lucide-react';
+import { useState } from 'react';
 
 export function DeviceList() {
-  const { connectedDevices, selectedDevice, setSelectedDevice } = useAppStore();
+  const { connectedDevices, selectedDevice, setSelectedDevice, deviceAliases, setDeviceAlias } = useAppStore();
+  const [editingId, setEditingId] = useState<string | null>(null);
+  const [editName, setEditName] = useState('');
+
+  const startEditing = (e: React.MouseEvent, id: string) => {
+    e.stopPropagation();
+    setEditingId(id);
+    setEditName(deviceAliases[id] || id);
+  };
+
+  const saveEdit = (e: React.MouseEvent | React.KeyboardEvent, id: string) => {
+    e.stopPropagation();
+    if (editName.trim()) {
+      setDeviceAlias(id, editName.trim());
+    }
+    setEditingId(null);
+  };
+
+  const cancelEdit = (e: React.MouseEvent | React.KeyboardEvent) => {
+    e.stopPropagation();
+    setEditingId(null);
+  };
 
   return (
     <div className="bg-black border border-[#00FF41] h-full flex flex-col overflow-hidden shadow-[inset_0_0_10px_rgba(0,255,65,0.1)]">
@@ -30,7 +51,35 @@ export function DeviceList() {
               >
                 <Cpu className={`w-4 h-4 ${isSelected ? 'text-white' : 'text-[#00FF41]'}`} />
                 <div className="flex-1 min-w-0">
-                  <div className={`text-xs font-mono truncate ${isSelected ? 'text-white font-bold' : 'text-[#00FF41]'}`}>{device.id}</div>
+                  {editingId === device.id ? (
+                    <div className="flex items-center gap-2 mb-1" onClick={e => e.stopPropagation()}>
+                      <input 
+                        type="text" 
+                        value={editName}
+                        onChange={(e) => setEditName(e.target.value)}
+                        className="bg-black border border-[#00FF41] text-[#00FF41] text-xs px-1 w-full outline-none focus:shadow-[0_0_5px_#00FF41]"
+                        autoFocus
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter') saveEdit(e, device.id);
+                          if (e.key === 'Escape') cancelEdit(e);
+                        }}
+                      />
+                      <button onClick={(e) => saveEdit(e, device.id)} className="text-[#00FF41] hover:text-white"><Check className="w-3 h-3" /></button>
+                      <button onClick={cancelEdit} className="text-red-500 hover:text-red-400"><X className="w-3 h-3" /></button>
+                    </div>
+                  ) : (
+                    <div className="flex items-center justify-between group/edit">
+                      <div className={`text-xs font-mono truncate ${isSelected ? 'text-white font-bold' : 'text-[#00FF41]'}`}>
+                        {deviceAliases[device.id] || device.id}
+                      </div>
+                      <button 
+                        onClick={(e) => startEditing(e, device.id)}
+                        className="opacity-0 group-hover/edit:opacity-100 text-[#00FF41] hover:text-white transition-opacity p-1"
+                      >
+                        <Edit2 className="w-3 h-3" />
+                      </button>
+                    </div>
+                  )}
                   <div className={`text-[10px] ${device.isIntercepting ? 'text-red-500' : 'text-[#00FF41]/70'}`}>
                     {device.isIntercepting ? 'Status: INTERCEPTING' : 'Status: IDLE'}
                   </div>
