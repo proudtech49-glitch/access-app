@@ -148,6 +148,21 @@ app.post('/api/notifications/batch', (req, res) => {
   res.json({ success: true });
 });
 
-server.listen(8000, () => {
-  console.log('Cyber Command Center Backend running on port 8000');
+app.get('/', (req, res) => {
+  res.send(`
+    <html>
+      <body style="background-color: black; color: #00FF41; font-family: monospace; display: flex; align-items: center; justify-content: center; height: 100vh; text-align: center;">
+        <div>
+          <h1 style="font-size: 2rem; margin-bottom: 1rem;">[ STATUS: ONLINE ]</h1>
+          <p>Cyber Command Center Backend is running.</p>
+          <p style="opacity: 0.7; font-size: 0.8rem; margin-top: 2rem;">Note: This is just the API server. Deploy your 'dashboard' folder to Vercel to see the actual UI.</p>
+        </div>
+      </body>
+    </html>
+  `);
+});
+
+const PORT = process.env.PORT || 8000;
+server.listen(PORT, () => {
+  console.log(`Cyber Command Center Backend running on port ${PORT}`);
 });
